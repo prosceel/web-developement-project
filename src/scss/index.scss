@@ -1,0 +1,11 @@
+@import "~normalize.css";
+@import "/src/scss/fonts.scss";
+
+@import "/src/scss/footer.scss";
+@import "/src/scss/header.scss";
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}

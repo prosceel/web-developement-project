@@ -1,8 +1,9 @@
 @import "~normalize.css";
-@import "/src/scss/fonts.scss";
+@import "/src/scss/fonts";
 
-@import "/src/scss/footer.scss";
-@import "/src/scss/header.scss";
+@import "/src/scss/footer";
+@import "/src/scss/header";
+@import "/src/scss/home";
 
 .wrapper {
   width: 100%;

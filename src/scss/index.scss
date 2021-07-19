@@ -1,11 +1,13 @@
 @import "~normalize.css";
 @import "/src/scss/fonts";
+@import "/src/scss/mixin";
 
 @import "/src/scss/footer";
 @import "/src/scss/header";
 @import "/src/scss/home";
 @import "/src/scss/about-us";
-@import "/src/scss/our-services.scss";
+@import "/src/scss/our-services";
+@import "/src/scss/latest-works";
 
 .wrapper {
   width: 100%;

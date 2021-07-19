@@ -1,9 +1,7 @@
-/*const header = document.querySelector('.header');
+import detectScrollbar from './detect-scrollbar'
+import resizeWindowHeight from './resize-window-height'
 
-const scrollHeader = () => {
-    if(window.scrollY > 50) {
-        header.classList.add('header--is-active');
-    }
-};
-
-window.onscroll = scrollHeader();*/
+document.addEventListener('DOMContentLoaded', () => {
+    resizeWindowHeight()
+    detectScrollbar()
+  })

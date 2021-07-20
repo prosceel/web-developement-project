@@ -8,6 +8,11 @@
 @import "/src/scss/about-us";
 @import "/src/scss/our-services";
 @import "/src/scss/latest-works";
+@import "/src/scss/price";
+
+html{
+  overflow-x: hidden;
+}
 
 .wrapper {
   width: 100%;

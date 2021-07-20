@@ -1,0 +1,176 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #edeeee;
+  padding: 123px 0 126px;
+
+  &__heading {
+    margin: 0;
+    font-family: $OpenSans;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #212121;
+  }
+
+  &__text {
+    @include text-width;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #212121;
+    margin: 24px 0 125px;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.3s;
+    padding-bottom: 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      background-color: #00897b;
+      left: -25px;
+      right: -25px;
+      top: -35px;
+      height: 228px;
+      transform: rotate(-5deg);
+    }
+
+    &:hover {
+      box-shadow: 0px 3px 25px 0 rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  &__item-heading {
+    font-family: $OpenSans;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #ffffff;
+    margin: 44px 0 0;
+  }
+
+  &__item-pricing {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  &__item-pricing-text {
+    font-family: $OpenSans;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #ffffff;
+
+    &:nth-child(1) {
+      align-self: flex-start;
+      margin-top: 5px;
+    }
+
+    &:nth-child(2) {
+      font-size: 50px;
+    }
+
+    &:nth-child(3) {
+      font-size: 17px;
+      align-self: flex-end;
+      margin-bottom: 12px;
+      margin-left: 7px;
+    }
+  }
+
+  &__item-features {
+    padding: 0;
+    margin-top: 87px;
+  }
+
+  &__item-feature {
+    list-style-type: none;
+    font-family: $OpenSans;
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.85px;
+    text-align: center;
+    color: #212121;
+    padding: 15px 0 12px;
+    margin-bottom: 18px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 180px;
+      bottom: 0;
+      left: -27px;
+      background-color: #000000;
+      opacity: 0.5;
+    }
+  }
+
+  &__item-order-button {
+    border: solid 2px #000000;
+    background: transparent;
+    padding: 17px 10px;
+    width: 180px;
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #212121;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 48px 0 0;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &:hover {
+      color: #ffffff;
+      background-color: #00897b;
+      border: solid 2px #00897b;
+    }
+  }
+}

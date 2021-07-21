@@ -1,0 +1,124 @@
+.blog {
+  padding: 120px 0 125px;
+  background-color: #e4fdf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-family: $OpenSans;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #212121;
+    margin: 0;
+  }
+
+  &__text {
+    @include text-width;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #212121;
+    margin: 25px 0 126px;
+  }
+
+  &__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 400px 400px;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+
+  &__item-description {
+    padding: 57px 0;
+  }
+
+  &__item-description-heading {
+    font-family: $OpenSans;
+    font-size: 25px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.25px;
+    text-align: start;
+    color: #212121;
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      color: #00897b;
+    }
+  }
+
+  &__item-description-container {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  &__item-description-container-image {
+    width: 17px;
+    height: 18px;
+    margin-right: 14px;
+  }
+
+  &__item-description-container-date {
+    font-family: $OpenSans;
+    font-size: 17px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.85px;
+    color: #212121;
+    margin: 0 40px 0 0;
+  }
+
+  &__item-description-text {
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: 0.75px;
+    text-align: left;
+    color: #212121;
+    max-width: 450px;
+    margin: 24px 0 0;
+  }
+
+  &__more-button {
+    width: 220px;
+    height: 70px;
+    padding: 10px;
+    background-color: #00897b;
+    font-family: $Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin-top: 125px;
+  }
+}

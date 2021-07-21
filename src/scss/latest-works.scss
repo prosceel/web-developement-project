@@ -35,7 +35,7 @@
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 15px;
-    margin: 110px 0 0;
+    margin: 110px 0 119px;
   }
 
   &__navigation-item {
@@ -63,7 +63,6 @@
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 119px 0 0;
   }
 
   &__gallery-item {
@@ -86,6 +85,12 @@
       transition: 0.3s ease-in-out;
     }
 
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
     &-text {
       transition: 0.3s ease-in-out;
       position: absolute;
@@ -104,6 +109,10 @@
       letter-spacing: 1px;
       text-align: center;
       color: #ffffff;
+
+      @media (min-width: 1290px) {
+        font-size: 30px;
+      }
     }
 
     &-text-description {
@@ -116,6 +125,10 @@
       letter-spacing: 0.75px;
       text-align: center;
       color: #ffffff;
+
+      @media (min-width: 1400px) {
+        font-size: 25px;
+      }
     }
 
     &:hover {

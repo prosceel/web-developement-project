@@ -20,7 +20,7 @@ html {
   --wrapper-padding: #{$wrapper-padding};
 
   height: 100%;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 
   @media (min-width: #{1210px + $wrapper-padding * 2}) {
     --wrapper-width: #{$wrapper-width-wide};
@@ -29,6 +29,12 @@ html {
 
 .modal--is-opened {
   overflow: hidden;
+}
+
+@media (max-width: 1209px) {
+  body {
+    padding-top: 70px;
+  }
 }
 
 .wrapper {
@@ -46,5 +52,12 @@ html {
   @media (max-width: 1209px) {
     padding-left: 15px;
     padding-right: 15px;
+    max-width: calc(100vw - 30px);
   }
+}
+
+.simpleParallax {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }

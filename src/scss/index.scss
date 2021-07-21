@@ -13,6 +13,7 @@
 @import "/src/scss/members";
 @import "/src/scss/blog";
 @import "/src/scss/contacts";
+@import "/src/scss/mobile-header";
 
 html {
   --wrapper-width: #{$wrapper-width};
@@ -26,6 +27,10 @@ html {
   }
 }
 
+.modal--is-opened {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: var(--wrapper-width);
   margin: 0 auto;
@@ -36,5 +41,10 @@ html {
     padding-left: $wrapper-padding;
     padding-right: $wrapper-padding;
     max-width: 100%;
+  }
+
+  @media (max-width: 1209px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

@@ -1,0 +1,150 @@
+.mobile-header {
+  padding: 0 15px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: sticky;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #212121;
+  }
+
+  &__logo {
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #212121;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation-burger {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &--is-active {
+      .mobile-header__navigation-burger-item {
+        &:nth-child(1) {
+          transform: rotate(-45deg) translateY(3px);
+        }
+
+        &:nth-child(2) {
+          width: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(45deg) translateY(-3px);
+        }
+      }
+    }
+  }
+
+  &__navigation-burger-item {
+    width: 100%;
+    height: 2px;
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform-origin: right;
+  }
+
+  &__navigation-item {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+
+    &--is-search {
+      margin-top: 4px;
+      margin-right: 10px;
+    }
+  }
+
+  &__navigation-item-search-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  &__menu {
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    left: 60vw;
+    right: 0;
+    height: calc(100 * var(--height-point) - 70px);
+    transform: translate(100%);
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--is-active {
+      transform: translate(0%);
+    }
+  }
+
+  &__menu-button {
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #212121;
+    padding: 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #212121;
+      opacity: 0.7;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @media (min-width: 1209px) {
+    display: none;
+  }
+}

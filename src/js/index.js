@@ -1,9 +1,15 @@
-/*const header = document.querySelector('.header');
+import detectScrollbar from './detect-scrollbar'
+import resizeWindowHeight from './resize-window-height'
+import simpleParallax from 'simple-parallax-js';
 
-const scrollHeader = () => {
-    if(window.scrollY > 50) {
-        header.classList.add('header--is-active');
-    }
-};
+document.addEventListener('DOMContentLoaded', () => {
+  resizeWindowHeight()
+  detectScrollbar()
+});
 
-window.onscroll = scrollHeader();*/
+const image = document.querySelectorAll('.home__image');
+new simpleParallax(image, {
+  scale: 1.3,
+  delay: .6,
+  transition: 'cubic-bezier(0,0,0,1)'
+});

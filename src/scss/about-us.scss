@@ -17,6 +17,7 @@
   }
 
   &__text {
+    @include text-width;
     font-family: $OpenSans;
     font-size: 15px;
     font-weight: normal;
@@ -25,7 +26,6 @@
     letter-spacing: 0.75px;
     text-align: center;
     line-height: 1.47;
-    max-width: 620px;
     margin: 25px 0 0;
   }
 

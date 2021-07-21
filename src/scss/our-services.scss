@@ -18,8 +18,8 @@
   }
 
   &__text {
+    @include text-width;
     font-family: $OpenSans;
-    max-width: 620px;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;

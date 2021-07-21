@@ -48,6 +48,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 100px;
     margin: 100px 0 0;
+    width: 72vw;
   }
 
   &__item {
@@ -88,7 +89,7 @@
 
   &__email-form {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 36vw 36vw;
     grid-template-rows: 85px;
     grid-column-gap: 30px;
     margin-top: 76px;
@@ -132,7 +133,7 @@
   }
 
   &__comment-form-item {
-    width: 1030px;
+    width: calc(72vw + 30px);
     height: 325px;
     padding: 26px 20px;
     box-sizing: border-box;

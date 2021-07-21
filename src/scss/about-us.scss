@@ -26,14 +26,14 @@
     letter-spacing: 0.75px;
     text-align: center;
     line-height: 1.47;
-    margin: 25px 0 0;
+    margin: 25px 0 122px;
   }
 
   &__features {
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 145px;
-    grid-auto-columns: 255px;
+    grid-auto-columns: 1fr;
     margin-top: 122px;
     padding: 0;
   }
@@ -73,5 +73,6 @@
     text-align: center;
     color: #212121;
     margin-top: 17px;
+    max-width: 350px;
   }
 }

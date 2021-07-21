@@ -1,0 +1,183 @@
+.contacts {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: 122px 0 110px;
+
+  &__image {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+  }
+
+  &__heading {
+    font-family: $OpenSans;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  &__text {
+    @include text-width;
+    font-family: $OpenSans;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: 0.75px;
+    text-align: center;
+    color: #ffffff;
+    margin: 24px 0 0;
+  }
+
+  &__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    margin: 100px 0 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-logo-background {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background-color: #3949ab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-contact-methods {
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    max-width: 250px;
+    margin-top: 33px;
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+  }
+
+  &__email-form {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 85px;
+    grid-column-gap: 30px;
+    margin-top: 76px;
+  }
+
+  &__email-form-item {
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #4d4d4d;
+    padding: 35px 21px;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-family: $OpenSans;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.4;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #4d4d4d;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  &__comment-form-item {
+    width: 1030px;
+    height: 325px;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    font-family: $OpenSans;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    color: #212121;
+    resize: none;
+
+    &::placeholder {
+      font-family: $OpenSans;
+      font-size: 20px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 1px;
+      text-align: left;
+      color: #4d4d4d;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  &__comment-form-button {
+    align-self: flex-end;
+    width: 220px;
+    height: 70px;
+    padding: 15px;
+    font-family: $Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #212121;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 40px;
+  }
+}

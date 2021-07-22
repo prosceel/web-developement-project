@@ -7,7 +7,12 @@
   height: calc(100vh - 120px);
   position: relative;
 
-  &__image{
+  @media (max-width: 1209px) {
+    padding: 0 15px;
+    height: calc(100vh - 70px);
+  }
+
+  &__image {
     position: absolute;
     left: 0;
     top: 0;
@@ -17,7 +22,7 @@
     object-fit: cover;
   }
 
-  &__texts{
+  &__texts {
     position: relative;
     z-index: 4;
     width: 100%;
@@ -26,9 +31,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1209px) {
+      max-width: calc(100vw - 30px);
+    }
   }
 
-  &__container{
+  &__container {
     z-index: 1;
   }
 
@@ -42,6 +51,10 @@
     text-align: center;
     color: #ffffff;
     margin: 0;
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
   }
 
   &__text {
@@ -53,6 +66,10 @@
     letter-spacing: 1.1px;
     text-align: center;
     color: #ffffff;
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+    }
   }
 
   &__buttons {
@@ -61,6 +78,13 @@
     grid-auto-flow: column;
     grid-gap: 25px;
     cursor: pointer;
+
+    @media (max-width: 767px) {
+      margin-top: 47px;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+    }
   }
 
   &__buttons-item {
@@ -87,6 +111,11 @@
     &:active,
     &:focus {
       outline: 0;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+      width: 100%;
     }
   }
 

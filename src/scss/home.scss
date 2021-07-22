@@ -42,15 +42,9 @@
   }
 
   &__heading {
-    font-family: $OpenSans;
-    font-size: 60px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 3px;
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
+    @media (max-width: 1209px) {
+      font-size: 50px;
+    }
 
     @media (max-width: 767px) {
       font-size: 30px;

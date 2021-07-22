@@ -4,16 +4,8 @@
   align-items: center;
   padding: 117px 0 124px;
 
-  &__heading {
-    font-family: $OpenSans;
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 1.5px;
-    text-align: center;
-    color: #212121;
-    margin: 0;
+  @media (max-width: 1209px) {
+    padding: 70px 0;
   }
 
   &__text {
@@ -28,14 +20,34 @@
     text-align: center;
     color: #212121;
     margin: 25px 0 126px;
+
+    @media (max-width: 1209px) {
+      margin-bottom: 55px;
+    }
   }
 
   &__list {
     padding: 0;
     margin: 0;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
+    display: none;
+
+    @media (min-width: 1209px) {
+      display: grid;
+    }
+
+    &--is-mobile {
+      max-width: calc(100vw - 30px);
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 15px;
+      grid-column-gap: 15px;
+
+      @media (max-width: 1209px) {
+        display: grid;
+      }
+    }
   }
 
   &__item {
@@ -43,6 +55,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 1209px) {
+      scroll-snap-align: center;
+    }
   }
 
   &__item-image {
@@ -61,6 +77,10 @@
     text-align: center;
     color: #212121;
     margin: 34px 0 0;
+
+    @media (max-width: 1209px) {
+      margin-top: 17px;
+    }
   }
 
   &__item-description {
@@ -73,6 +93,10 @@
     text-align: center;
     color: #212121;
     margin: 10px 0 0;
+
+    @media (max-width: 1209px) {
+      margin-top: 5px;
+    }
   }
 
   &__item-comunications {
@@ -82,6 +106,13 @@
     grid-template-rows: 50px;
     grid-column-gap: 20px;
     margin: 30px 0 0;
+
+    @media (max-width: 1209px) {
+      grid-template-columns: 40px 40px 40px 40px;
+      grid-template-rows: 40px;
+      grid-column-gap: 10px;
+      margin-top: 15px;
+    }
   }
 
   &__item-comunication {
@@ -102,16 +133,28 @@
     &-image--is-facebook {
       width: 27px;
       height: 28px;
+      @media (max-width: 1209px) {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &-image--is-twitter {
       width: 26px;
       height: 26px;
+      @media (max-width: 1209px) {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &-image--is-chat {
       width: 30px;
       height: 30px;
+      @media (max-width: 1209px) {
+        width: 20px;
+        height: 20px;
+      }
     }
 
     &:hover {
@@ -127,6 +170,10 @@
     display: flex;
     padding: 0;
     margin: 126px 0 0;
+
+    @media (max-width: 1209px) {
+      display: none;
+    }
   }
 
   &__scroll-item {

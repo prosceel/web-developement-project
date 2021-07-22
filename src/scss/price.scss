@@ -6,16 +6,8 @@
   background-color: #edeeee;
   padding: 123px 0 126px;
 
-  &__heading {
-    margin: 0;
-    font-family: $OpenSans;
-    font-size: 30px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: 1.5px;
-    text-align: center;
-    color: #212121;
+  @media (max-width: 1209px) {
+    padding: 70px 0;
   }
 
   &__text {
@@ -39,6 +31,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px;
     width: 100%;
+
+    @media (max-width: 1209px) {
+      grid-column-gap: 15px;
+      grid-row-gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 550px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -52,6 +57,10 @@
     z-index: 0;
     transition: 0.3s;
     padding-bottom: 60px;
+
+    @media (max-width: 1209px) {
+      padding-bottom: 40px;
+    }
 
     @media (min-width: 1400px) {
       padding-bottom: 80px;
@@ -67,6 +76,10 @@
       top: -35px;
       height: 228px;
       transform: rotate(-5deg);
+
+      @media (max-width: 1209px) {
+        height: 180px;
+      }
     }
 
     &:hover {
@@ -85,6 +98,10 @@
     color: #ffffff;
     margin: 44px 0 0;
 
+    @media (max-width: 1209px) {
+      margin-top: 30px;
+    }
+
     @media (min-width: 1400px) {
       margin-top: 65px;
     }
@@ -93,6 +110,10 @@
   &__item-pricing {
     display: flex;
     margin-top: 24px;
+
+    @media (max-width: 1209px) {
+      margin-top: 15px;
+    }
   }
 
   &__item-pricing-text {
@@ -108,10 +129,18 @@
     &:nth-child(1) {
       align-self: flex-start;
       margin-top: 5px;
+
+      @media (max-width: 1209px) {
+        font-size: 20px;
+      }
     }
 
     &:nth-child(2) {
       font-size: 50px;
+
+      @media (max-width: 1209px) {
+        font-size: 40px;
+      }
     }
 
     &:nth-child(3) {
@@ -119,12 +148,22 @@
       align-self: flex-end;
       margin-bottom: 12px;
       margin-left: 7px;
+
+      @media (max-width: 1209px) {
+        margin-left: 4px;
+        margin-bottom: 9px;
+        font-size: 16px;
+      }
     }
   }
 
   &__item-features {
     padding: 0;
     margin-top: 87px;
+
+    @media (max-width: 1209px) {
+      margin-top: 43px;
+    }
   }
 
   &__item-feature {
@@ -156,8 +195,9 @@
   &__item-order-button {
     border: solid 2px #000000;
     background: transparent;
-    padding: 17px 10px;
+    padding: 0 10px;
     width: 180px;
+    height: 60px;
     font-family: $OpenSans;
     font-size: 20px;
     font-weight: 600;
@@ -179,6 +219,12 @@
       color: #ffffff;
       background-color: #00897b;
       border: solid 2px #00897b;
+    }
+
+    @media (max-width: 1209px) {
+      height: 50px;
+      width: 150px;
+      margin-top: 15px;
     }
   }
 }

@@ -54,6 +54,7 @@
 
         &:nth-child(2) {
           width: 0;
+          transform-origin: left;
         }
 
         &:nth-child(3) {
@@ -96,13 +97,13 @@
     position: absolute;
     z-index: 10;
     top: 70px;
-    left: 60vw;
+    left: 0;
     right: 0;
     height: calc(100 * var(--height-point) - 70px);
     transform: translate(100%);
     background-color: #ffffff;
     transition: 0.3s ease-in-out;
-    padding: 50px 15px;
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

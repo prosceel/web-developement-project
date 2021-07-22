@@ -38,6 +38,7 @@
     }
 
     &--is-mobile {
+      display: none;
       max-width: calc(100vw - 30px);
       overflow: scroll;
       scroll-snap-type: x mandatory;

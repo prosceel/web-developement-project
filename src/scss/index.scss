@@ -57,9 +57,14 @@ html {
 }
 
 .simpleParallax {
+  transition: all 0.3s ease-in-out;
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  min-height: calc(var(--height-point) * 100 - 120px);
+
+  @media (max-width: 1209px) {
+    min-height: calc(var(--height-point) * 100 - 70px);
+  }
 }
 
 .site-heading {

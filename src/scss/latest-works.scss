@@ -54,8 +54,15 @@
     padding: 14px 25px;
     border: solid 2px #00897b;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 
     &--is-active {
+      background-color: #00897b;
+      color: #ffffff;
+    }
+
+    &:hover,
+    &:focus {
       background-color: #00897b;
       color: #ffffff;
     }
@@ -204,15 +211,20 @@
     margin-top: 130px;
     cursor: pointer;
     box-sizing: border-box;
+    transition: 0.3s ease-in-out;
 
     @media (max-width: 1209px) {
       width: 200px;
       height: 50px;
     }
 
+    &:hover,
     &:focus,
     &:active {
       outline: none;
+      background-color: #ffffff;
+      color: #212121;
+      border: 2px solid #212121;
     }
   }
 }

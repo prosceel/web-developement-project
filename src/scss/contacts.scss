@@ -231,6 +231,14 @@
     background-color: #ffffff;
     border: none;
     margin-top: 40px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      background-color: #3949ab;
+      color: #ffffff;
+    }
 
     @media (max-width: 767px) {
       align-self: center;

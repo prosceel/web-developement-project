@@ -20,7 +20,7 @@ html {
   --wrapper-padding: #{$wrapper-padding};
 
   height: 100%;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 
   @media (min-width: #{1210px + $wrapper-padding * 2}) {
     --wrapper-width: #{$wrapper-width-wide};

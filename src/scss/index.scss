@@ -65,7 +65,7 @@ html {
   left: 0;
 
   @media (max-width: 1209px) {
-    max-height: calc(var(--height-point) * 100 - 70px);
+    max-height: calc(100vh - 70px);
   }
 }
 

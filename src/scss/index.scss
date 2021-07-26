@@ -60,12 +60,12 @@ html {
   position: absolute;
   width: 100vw;
   height: 100%;
-  max-height: calc(var(--height-point) * 100 - 120px);
+  min-height: calc(var(--height-point) * 100 - 120px);
   top: 0;
   left: 0;
 
   @media (max-width: 1209px) {
-    max-height: calc(100vh - 70px);
+    min-height: calc(var(--height-point) * 100 - 70px);
   }
 }
 

@@ -21,6 +21,7 @@ const html = document.querySelector('html');
 const openMenu = () => {
   btnBurger.classList.toggle('mobile-header__navigation-burger--is-active');
   menu.classList.toggle('mobile-header__menu--is-active');
+  html.classList.toggle('menu--is-opened')
 };
 
 btnBurger.addEventListener('click', openMenu);

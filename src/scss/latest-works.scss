@@ -43,6 +43,9 @@
 
   &__navigation-item {
     list-style-type: none;
+  }
+
+  &__navigation-item-button {
     text-align: center;
     font-family: $OpenSans;
     font-size: 20px;
@@ -55,6 +58,7 @@
     border: solid 2px #00897b;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    background-color: transparent;
 
     &--is-active {
       background-color: #00897b;
@@ -62,7 +66,8 @@
     }
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       background-color: #00897b;
       color: #ffffff;
     }

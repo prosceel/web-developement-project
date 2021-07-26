@@ -211,14 +211,12 @@
     margin: 48px 0 0;
 
     &:focus,
-    &:active {
-      outline: none;
-    }
-
+    &:active,
     &:hover {
       color: #ffffff;
       background-color: #00897b;
       border: solid 2px #00897b;
+      outline: none;
     }
 
     @media (max-width: 1209px) {

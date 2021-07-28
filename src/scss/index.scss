@@ -13,16 +13,26 @@
 @import "/src/scss/members";
 @import "/src/scss/blog";
 @import "/src/scss/contacts";
+@import "/src/scss/mobile-header";
 
 html {
   --wrapper-width: #{$wrapper-width};
   --wrapper-padding: #{$wrapper-padding};
 
   height: 100%;
-  overflow-x: hidden;
 
   @media (min-width: #{1210px + $wrapper-padding * 2}) {
     --wrapper-width: #{$wrapper-width-wide};
+  }
+}
+
+.menu--is-opened {
+  overflow: hidden;
+}
+
+@media (max-width: 1209px) {
+  body {
+    padding-top: 70px;
   }
 }
 
@@ -36,5 +46,44 @@ html {
     padding-left: $wrapper-padding;
     padding-right: $wrapper-padding;
     max-width: 100%;
+  }
+
+  @media (max-width: 1209px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: var(--wrapper-width);
+  }
+}
+
+.simpleParallax {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100vw;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 1209px) {
+    min-height: calc(var(--height-point) * 100 - 70px);
+  }
+}
+
+.site-heading {
+  font-family: $OpenSans;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin: 0;
+  color: #212121;
+
+  &--is-white {
+    color: #ffffff;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 25px;
   }
 }

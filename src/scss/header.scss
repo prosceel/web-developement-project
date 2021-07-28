@@ -4,6 +4,7 @@
   background-color: transparent;
   transition: all 0.3s ease-in-out;
   z-index: 100;
+  display: none;
 
   &--is-active {
     background-color: #ffffff;
@@ -35,6 +36,10 @@
     &:focus {
       outline: none;
     }
+  }
+
+  @media (min-width: 1209px) {
+    display: block;
   }
 }
 

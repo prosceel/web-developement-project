@@ -1,11 +1,18 @@
 import detectScrollbar from './detect-scrollbar'
 import resizeWindowHeight from './resize-window-height'
 import simpleParallax from 'simple-parallax-js';
+import scrollToElement from './scroll-to-element';
+
+const homeButton = document.querySelector('.header-navigation__button--is-home');
+const homeArrow = document.querySelector('.home__arrow');
 
 document.addEventListener('DOMContentLoaded', () => {
   resizeWindowHeight()
   detectScrollbar()
 });
+
+homeButton.addEventListener('click', scrollToElement);
+homeArrow.addEventListener('click', scrollToAbout);
 
 const home = document.querySelectorAll('.home__image');
 new simpleParallax(home, {

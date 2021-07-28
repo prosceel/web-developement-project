@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 homeButton.addEventListener('click', scrollToElement);
-homeArrow.addEventListener('click', scrollToAbout);
 
 const home = document.querySelectorAll('.home__image');
 new simpleParallax(home, {

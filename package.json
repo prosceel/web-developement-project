@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "copy": "cp index.html dist/ && cp -R img dist/ && mkdir dist/dist && cp dist/index.css dist/dist/ && cp dist/index.js dist/dist/",
+    "copy": "cp index.html dist/ && cp -R img dist/ && mkdir dist/dist && cp dist/index.css dist/dist/ && cp dist/index.js dist/dist/ && mv -f fonts/ dist/",
     "dev": "npm run development",
     "development": "mix",
     "watch": "mix watch",

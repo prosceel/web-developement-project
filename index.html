@@ -7,9 +7,6 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Test task</title>
         <style>
-            @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap);
-            @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
-
             /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
             /* Document
    ========================================================================== */
@@ -350,6 +347,1600 @@
                 display: none;
             }
 
+            @charset "UTF-8";
+
+            /*!
+ *  MDL2 Icons 1.0.0 by @sdorman -
+ */
+            .mdl2-spin {
+                -webkit-animation: mdl2-spin 2s infinite linear;
+                animation: mdl2-spin 2s infinite linear;
+            }
+
+            .mdl2-pulse {
+                -webkit-animation: mdl2-spin 1s infinite steps(8);
+                animation: mdl2-spin 1s infinite steps(8);
+            }
+
+            @-webkit-keyframes mdl2-spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(359deg);
+                }
+            }
+
+            @keyframes mdl2-spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(359deg);
+                }
+            }
+
+            .mdl2-border {
+                padding: 0.2em 0.25em 0.15em;
+                border: solid 0.08em #eee;
+                border-radius: 0.1em;
+            }
+
+            .mdl2-pull-left {
+                float: left;
+            }
+
+            .mdl2-pull-right {
+                float: right;
+            }
+
+            .mdl2.mdl2-pull-left {
+                margin-right: 0.3em;
+            }
+
+            .mdl2.mdl2-pull-right {
+                margin-left: 0.3em;
+            }
+
+            .mdl2.pull-left {
+                margin-right: 0.3em;
+            }
+
+            .mdl2.pull-right {
+                margin-left: 0.3em;
+            }
+
+            .mdl2 {
+                display: inline-block;
+                font: normal normal normal 14px/1 MDL2;
+                font-size: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            .mdl2-fw {
+                width: 1.2857142857em;
+                text-align: center;
+            }
+
+            .mdl2-accept:before {
+                content: "";
+            }
+
+            .mdl2-accounts:before {
+                content: "";
+            }
+
+            .mdl2-add:before {
+                content: "";
+            }
+
+            .mdl2-add-friend:before {
+                content: "";
+            }
+
+            .mdl2-admin:before {
+                content: "";
+            }
+
+            .mdl2-align-center:before {
+                content: "";
+            }
+
+            .mdl2-align-left:before {
+                content: "";
+            }
+
+            .mdl2-align-right:before {
+                content: "";
+            }
+
+            .mdl2-all-apps:before {
+                content: "";
+            }
+
+            .mdl2-arrow-html-legacy:before {
+                content: "";
+            }
+
+            .mdl2-arrow-html-mirrored-legacy:before {
+                content: "";
+            }
+
+            .mdl2-attach:before {
+                content: "";
+            }
+
+            .mdl2-paperclip:before {
+                content: "";
+            }
+
+            .mdl2-attach-camera:before {
+                content: "";
+            }
+
+            .mdl2-audio:before {
+                content: "";
+            }
+
+            .mdl2-back:before {
+                content: "";
+            }
+
+            .mdl2-back-bttn-arrow-20-legacy:before {
+                content: "";
+            }
+
+            .mdl2-back-bttn-arrow-42-legacy:before {
+                content: "";
+            }
+
+            .mdl2-back-bttn-mirrored-arrow-20-legacy:before {
+                content: "";
+            }
+
+            .mdl2-back-bttn-mirrored-arrow-42-legacy:before {
+                content: "";
+            }
+
+            .mdl2-back-to-window:before {
+                content: "";
+            }
+
+            .mdl2-battery-0:before {
+                content: "";
+            }
+
+            .mdl2-battery-1:before {
+                content: "";
+            }
+
+            .mdl2-battery-10:before {
+                content: "";
+            }
+
+            .mdl2-battery-2:before {
+                content: "";
+            }
+
+            .mdl2-battery-3:before {
+                content: "";
+            }
+
+            .mdl2-battery-4:before {
+                content: "";
+            }
+
+            .mdl2-battery-5:before {
+                content: "";
+            }
+
+            .mdl2-battery-6:before {
+                content: "";
+            }
+
+            .mdl2-battery-7:before {
+                content: "";
+            }
+
+            .mdl2-battery-8:before {
+                content: "";
+            }
+
+            .mdl2-battery-9:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-0:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-1:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-10:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-2:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-3:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-4:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-5:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-6:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-7:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-8:before {
+                content: "";
+            }
+
+            .mdl2-battery-charging-9:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-0:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-1:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-10:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-2:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-3:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-4:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-5:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-6:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-7:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-8:before {
+                content: "";
+            }
+
+            .mdl2-battery-saver-9:before {
+                content: "";
+            }
+
+            .mdl2-battery-unknown:before {
+                content: "";
+            }
+
+            .mdl2-block-contact:before {
+                content: "";
+            }
+
+            .mdl2-blocked-legacy:before {
+                content: "";
+            }
+
+            .mdl2-bold:before {
+                content: "";
+            }
+
+            .mdl2-bookmarks:before {
+                content: "";
+            }
+
+            .mdl2-browse-photos:before {
+                content: "";
+            }
+
+            .mdl2-bulleted-list:before {
+                content: "";
+            }
+
+            .mdl2-calculator:before {
+                content: "";
+            }
+
+            .mdl2-calendar:before {
+                content: "";
+            }
+
+            .mdl2-calendar-day:before {
+                content: "";
+            }
+
+            .mdl2-calendar-week:before {
+                content: "";
+            }
+
+            .mdl2-camera:before {
+                content: "";
+            }
+
+            .mdl2-cancel:before {
+                content: "";
+            }
+
+            .mdl2-caption:before {
+                content: "";
+            }
+
+            .mdl2-cc:before {
+                content: "";
+            }
+
+            .mdl2-cellphone:before {
+                content: "";
+            }
+
+            .mdl2-characters:before {
+                content: "";
+            }
+
+            .mdl2-checkbox:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-composite:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-composite-legacy:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-composite-reversed:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-composite-reversed-legacy:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-fill:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-fill-legacy:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-fill-zero-width-legacy:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-indeterminate:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-indeterminate-legacy:before {
+                content: "";
+            }
+
+            .mdl2-checkbox-legacy:before {
+                content: "";
+            }
+
+            .mdl2-check-mark:before {
+                content: "";
+            }
+
+            .mdl2-check-mark-legacy:before {
+                content: "";
+            }
+
+            .mdl2-check-mark-zero-width-legacy:before {
+                content: "";
+            }
+
+            .mdl2-chrome-back:before {
+                content: "";
+            }
+
+            .mdl2-chrome-back-mirrored:before {
+                content: "";
+            }
+
+            .mdl2-clear:before {
+                content: "";
+            }
+
+            .mdl2-clear-selection:before {
+                content: "";
+            }
+
+            .mdl2-close-pane:before {
+                content: "";
+            }
+
+            .mdl2-cloud:before {
+                content: "";
+            }
+
+            .mdl2-comment:before {
+                content: "";
+            }
+
+            .mdl2-comment-legacy:before {
+                content: "";
+            }
+
+            .mdl2-contact:before {
+                content: "";
+            }
+
+            .mdl2-contact-2:before {
+                content: "";
+            }
+
+            .mdl2-contact-info:before {
+                content: "";
+            }
+
+            .mdl2-contact-presence:before {
+                content: "";
+            }
+
+            .mdl2-copy:before {
+                content: "";
+            }
+
+            .mdl2-crop:before {
+                content: "";
+            }
+
+            .mdl2-cut:before {
+                content: "";
+            }
+
+            .mdl2-delete:before {
+                content: "";
+            }
+
+            .mdl2-trash:before {
+                content: "";
+            }
+
+            .mdl2-trashcan:before {
+                content: "";
+            }
+
+            .mdl2-directions:before {
+                content: "";
+            }
+
+            .mdl2-disable-updates:before {
+                content: "";
+            }
+
+            .mdl2-disconnect-drive:before {
+                content: "";
+            }
+
+            .mdl2-dislike:before {
+                content: "";
+            }
+
+            .mdl2-dislike-legacy:before {
+                content: "";
+            }
+
+            .mdl2-dock-bottom:before {
+                content: "";
+            }
+
+            .mdl2-dock-left:before {
+                content: "";
+            }
+
+            .mdl2-dock-right:before {
+                content: "";
+            }
+
+            .mdl2-document:before {
+                content: "";
+            }
+
+            .mdl2-download:before {
+                content: "";
+            }
+
+            .mdl2-edit:before {
+                content: "";
+            }
+
+            .mdl2-pencil:before {
+                content: "";
+            }
+
+            .mdl2-emoji:before {
+                content: "";
+            }
+
+            .mdl2-emoji-2:before {
+                content: "";
+            }
+
+            .mdl2-favorite-2-legacy:before {
+                content: "";
+            }
+
+            .mdl2-favorite-legacy:before {
+                content: "";
+            }
+
+            .mdl2-favorite-list:before {
+                content: "";
+            }
+
+            .mdl2-favorite-star:before {
+                content: "";
+            }
+
+            .mdl2-favorite-star-fill:before {
+                content: "";
+            }
+
+            .mdl2-filter:before {
+                content: "";
+            }
+
+            .mdl2-find-legacy:before {
+                content: "";
+            }
+
+            .mdl2-flag:before {
+                content: "";
+            }
+
+            .mdl2-folder:before {
+                content: "";
+            }
+
+            .mdl2-font:before {
+                content: "";
+            }
+
+            .mdl2-fontcolor:before {
+                content: "";
+            }
+
+            .mdl2-font-decrease:before {
+                content: "";
+            }
+
+            .mdl2-font-increase:before {
+                content: "";
+            }
+
+            .mdl2-font-size:before {
+                content: "";
+            }
+
+            .mdl2-forward:before {
+                content: "";
+            }
+
+            .mdl2-four-bars:before {
+                content: "";
+            }
+
+            .mdl2-full-screen:before {
+                content: "";
+            }
+
+            .mdl2-globe:before {
+                content: "";
+            }
+
+            .mdl2-go:before {
+                content: "";
+            }
+
+            .mdl2-go-to-start:before {
+                content: "";
+            }
+
+            .mdl2-go-to-today:before {
+                content: "";
+            }
+
+            .mdl2-half-star-left:before {
+                content: "";
+            }
+
+            .mdl2-half-star-right:before {
+                content: "";
+            }
+
+            .mdl2-hangup:before {
+                content: "";
+            }
+
+            .mdl2-heart-broken-legacy:before {
+                content: "";
+            }
+
+            .mdl2-heart-broken-zero-width-legacy:before {
+                content: "";
+            }
+
+            .mdl2-heart-fill-legacy:before {
+                content: "";
+            }
+
+            .mdl2-heart-fill-zero-width-legacy:before {
+                content: "";
+            }
+
+            .mdl2-heart-legacy:before {
+                content: "";
+            }
+
+            .mdl2-help:before {
+                content: "";
+            }
+
+            .mdl2-hide-bcc:before {
+                content: "";
+            }
+
+            .mdl2-highlight:before {
+                content: "";
+            }
+
+            .mdl2-home:before {
+                content: "";
+            }
+
+            .mdl2-import:before {
+                content: "";
+            }
+
+            .mdl2-import-all:before {
+                content: "";
+            }
+
+            .mdl2-important:before {
+                content: "";
+            }
+
+            .mdl2-italic:before {
+                content: "";
+            }
+
+            .mdl2-keyboard-classic:before {
+                content: "";
+            }
+
+            .mdl2-leave-chat:before {
+                content: "";
+            }
+
+            .mdl2-library:before {
+                content: "";
+            }
+
+            .mdl2-like:before {
+                content: "";
+            }
+
+            .mdl2-like-dislike:before {
+                content: "";
+            }
+
+            .mdl2-like-dislike-legacy:before {
+                content: "";
+            }
+
+            .mdl2-like-legacy:before {
+                content: "";
+            }
+
+            .mdl2-link:before {
+                content: "";
+            }
+
+            .mdl2-list:before {
+                content: "";
+            }
+
+            .mdl2-location:before {
+                content: "";
+            }
+
+            .mdl2-mail:before {
+                content: "";
+            }
+
+            .mdl2-mail-fill:before {
+                content: "";
+            }
+
+            .mdl2-mail-forward:before {
+                content: "";
+            }
+
+            .mdl2-mail-message-legacy:before {
+                content: "";
+            }
+
+            .mdl2-mail-reply:before {
+                content: "";
+            }
+
+            .mdl2-mail-reply-all:before {
+                content: "";
+            }
+
+            .mdl2-manage:before {
+                content: "";
+            }
+
+            .mdl2-map-drive:before {
+                content: "";
+            }
+
+            .mdl2-map-pin:before {
+                content: "";
+            }
+
+            .mdl2-memo:before {
+                content: "";
+            }
+
+            .mdl2-voicemail:before {
+                content: "";
+            }
+
+            .mdl2-message:before {
+                content: "";
+            }
+
+            .mdl2-microphone:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-0:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-1:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-10:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-2:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-3:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-4:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-5:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-6:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-7:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-8:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-9:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-chargin-10:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-0:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-1:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-2:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-3:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-4:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-5:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-6:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-7:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-8:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-charging-9:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-0:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-1:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-10:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-2:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-3:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-4:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-5:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-6:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-7:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-8:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-saver-9:before {
+                content: "";
+            }
+
+            .mdl2-mob-battery-unknown:before {
+                content: "";
+            }
+
+            .mdl2-mobile-contact-legacy:before {
+                content: "";
+            }
+
+            .mdl2-more:before {
+                content: "";
+            }
+
+            .mdl2-ellipse:before {
+                content: "";
+            }
+
+            .mdl2-menu:before {
+                content: "";
+            }
+
+            .mdl2-move-to-folder:before {
+                content: "";
+            }
+
+            .mdl2-music-info:before {
+                content: "";
+            }
+
+            .mdl2-mute:before {
+                content: "";
+            }
+
+            .mdl2-new-folder:before {
+                content: "";
+            }
+
+            .mdl2-new-window:before {
+                content: "";
+            }
+
+            .mdl2-next:before {
+                content: "";
+            }
+
+            .mdl2-one-bar:before {
+                content: "";
+            }
+
+            .mdl2-open-file:before {
+                content: "";
+            }
+
+            .mdl2-open-local:before {
+                content: "";
+            }
+
+            .mdl2-folder-up:before {
+                content: "";
+            }
+
+            .mdl2-open-pane:before {
+                content: "";
+            }
+
+            .mdl2-open-with:before {
+                content: "";
+            }
+
+            .mdl2-orientation:before {
+                content: "";
+            }
+
+            .mdl2-other-user:before {
+                content: "";
+            }
+
+            .mdl2-outline-star-legacy:before {
+                content: "";
+            }
+
+            .mdl2-page:before {
+                content: "";
+            }
+
+            .mdl2-paste:before {
+                content: "";
+            }
+
+            .mdl2-pause:before {
+                content: "";
+            }
+
+            .mdl2-people:before {
+                content: "";
+            }
+
+            .mdl2-permissions:before {
+                content: "";
+            }
+
+            .mdl2-key:before {
+                content: "";
+            }
+
+            .mdl2-phone:before {
+                content: "";
+            }
+
+            .mdl2-phone-book:before {
+                content: "";
+            }
+
+            .mdl2-pin:before {
+                content: "";
+            }
+
+            .mdl2-play:before {
+                content: "";
+            }
+
+            .mdl2-post-update:before {
+                content: "";
+            }
+
+            .mdl2-presence-chicklet-legacy:before {
+                content: "";
+            }
+
+            .mdl2-presence-chicklet-video-legacy:before {
+                content: "";
+            }
+
+            .mdl2-preview:before {
+                content: "";
+            }
+
+            .mdl2-preview-link:before {
+                content: "";
+            }
+
+            .mdl2-previous:before {
+                content: "";
+            }
+
+            .mdl2-priority:before {
+                content: "";
+            }
+
+            .mdl2-protected-document:before {
+                content: "";
+            }
+
+            .mdl2-rating-star-fill-legacy:before {
+                content: "";
+            }
+
+            .mdl2-rating-star-fill-reduced-padding-html-legacy:before {
+                content: "";
+            }
+
+            .mdl2-rating-star-fill-small-legacy:before {
+                content: "";
+            }
+
+            .mdl2-rating-star-fill-zero-width-legacy:before {
+                content: "";
+            }
+
+            .mdl2-rating-star-legacy:before {
+                content: "";
+            }
+
+            .mdl2-read:before {
+                content: "";
+            }
+
+            .mdl2-redo:before {
+                content: "";
+            }
+
+            .mdl2-refresh:before {
+                content: "";
+            }
+
+            .mdl2-reload:before {
+                content: "";
+            }
+
+            .mdl2-remote:before {
+                content: "";
+            }
+
+            .mdl2-remove:before {
+                content: "";
+            }
+
+            .mdl2-rename:before {
+                content: "";
+            }
+
+            .mdl2-repair:before {
+                content: "";
+            }
+
+            .mdl2-wrench:before {
+                content: "";
+            }
+
+            .mdl2-repeat-all:before {
+                content: "";
+            }
+
+            .mdl2-repeat-one:before {
+                content: "";
+            }
+
+            .mdl2-reply-legacy:before {
+                content: "";
+            }
+
+            .mdl2-report-hacked:before {
+                content: "";
+            }
+
+            .mdl2-reshare:before {
+                content: "";
+            }
+
+            .mdl2-retweet:before {
+                content: "";
+            }
+
+            .mdl2-rotate:before {
+                content: "";
+            }
+
+            .mdl2-rotate-camera:before {
+                content: "";
+            }
+
+            .mdl2-save:before {
+                content: "";
+            }
+
+            .mdl2-save-local:before {
+                content: "";
+            }
+
+            .mdl2-scan:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-down-bold-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-down-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-left-bold-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-left-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-right-bold-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-right-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-up-bold-legacy:before {
+                content: "";
+            }
+
+            .mdl2-scroll-chevron-up-legacy:before {
+                content: "";
+            }
+
+            .mdl2-select-all:before {
+                content: "";
+            }
+
+            .mdl2-send:before {
+                content: "";
+            }
+
+            .mdl2-set-lock-screen:before {
+                content: "";
+            }
+
+            .mdl2-set-tile:before {
+                content: "";
+            }
+
+            .mdl2-settings:before {
+                content: "";
+            }
+
+            .mdl2-cog:before {
+                content: "";
+            }
+
+            .mdl2-gear:before {
+                content: "";
+            }
+
+            .mdl2-share:before {
+                content: "";
+            }
+
+            .mdl2-shop:before {
+                content: "";
+            }
+
+            .mdl2-bag:before {
+                content: "";
+            }
+
+            .mdl2-show-bcc:before {
+                content: "";
+            }
+
+            .mdl2-show-results:before {
+                content: "";
+            }
+
+            .mdl2-shuffle:before {
+                content: "";
+            }
+
+            .mdl2-slideshow:before {
+                content: "";
+            }
+
+            .mdl2-solid-star-legacy:before {
+                content: "";
+            }
+
+            .mdl2-sort:before {
+                content: "";
+            }
+
+            .mdl2-stop:before {
+                content: "";
+            }
+
+            .mdl2-street:before {
+                content: "";
+            }
+
+            .mdl2-switch:before {
+                content: "";
+            }
+
+            .mdl2-switch-apps:before {
+                content: "";
+            }
+
+            .mdl2-sync:before {
+                content: "";
+            }
+
+            .mdl2-sync-folder:before {
+                content: "";
+            }
+
+            .mdl2-tag:before {
+                content: "";
+            }
+
+            .mdl2-three-bars:before {
+                content: "";
+            }
+
+            .mdl2-touch-pointer:before {
+                content: "";
+            }
+
+            .mdl2-trim:before {
+                content: "";
+            }
+
+            .mdl2-two-bars:before {
+                content: "";
+            }
+
+            .mdl2-two-page:before {
+                content: "";
+            }
+
+            .mdl2-typing-indicator-legacy:before {
+                content: "";
+            }
+
+            .mdl2-underline:before {
+                content: "";
+            }
+
+            .mdl2-undo:before {
+                content: "";
+            }
+
+            .mdl2-unfavorite:before {
+                content: "";
+            }
+
+            .mdl2-unfavorite-2-legacy:before {
+                content: "";
+            }
+
+            .mdl2-unfavorite-legacy:before {
+                content: "";
+            }
+
+            .mdl2-un-pin:before {
+                content: "";
+            }
+
+            .mdl2-un-sync-folder:before {
+                content: "";
+            }
+
+            .mdl2-up:before {
+                content: "";
+            }
+
+            .mdl2-upload:before {
+                content: "";
+            }
+
+            .mdl2-video:before {
+                content: "";
+            }
+
+            .mdl2-video-chat:before {
+                content: "";
+            }
+
+            .mdl2-video-legacy:before {
+                content: "";
+            }
+
+            .mdl2-view:before {
+                content: "";
+            }
+
+            .mdl2-view-all:before {
+                content: "";
+            }
+
+            .mdl2-volume:before {
+                content: "";
+            }
+
+            .mdl2-webcam:before {
+                content: "";
+            }
+
+            .mdl2-world:before {
+                content: "";
+            }
+
+            .mdl2-zero-bars:before {
+                content: "";
+            }
+
+            .mdl2-zoom:before {
+                content: "";
+            }
+
+            .mdl2-zoom-in:before {
+                content: "";
+            }
+
+            .mdl2-zoom-out:before {
+                content: "";
+            }
+
+            /* makes the font 33% larger relative to the icon container */
+            .mdl2-lg {
+                font-size: 1.3333333333em;
+                line-height: 0.75em;
+                vertical-align: -15%;
+            }
+
+            .mdl2-2x {
+                font-size: 2em;
+            }
+
+            .mdl2-3x {
+                font-size: 3em;
+            }
+
+            .mdl2-4x {
+                font-size: 4em;
+            }
+
+            .mdl2-5x {
+                font-size: 5em;
+            }
+
+            .mdl2-6x {
+                font-size: 6em;
+            }
+
+            .mdl2-ul {
+                padding-left: 0;
+                margin-left: 2.1428571429em;
+                list-style-type: none;
+            }
+
+            .mdl2-ul>li {
+                position: relative;
+            }
+
+            .mdl2-li {
+                position: absolute;
+                left: -2.1428571429em;
+                width: 2.1428571429em;
+                top: 0.1428571429em;
+                text-align: center;
+            }
+
+            .mdl2-li.mdl2-lg {
+                left: -1.8571428571em;
+            }
+
+            /* FONT PATH
+ * -------------------------- */
+            @font-face {
+                font-family: "MDL2";
+                src: url(/fonts/mdl2.eot?140596e93ec961ff5cd4ccb00c1c70ca);
+                src: url(/fonts/mdl2.eot?140596e93ec961ff5cd4ccb00c1c70ca) format("embedded-opentype"), url(/fonts/mdl2.woff?26d7a2bd78cf993f89145743129d7d2f) format("woff"), url(/fonts/mdl2.ttf?e70358f15bfc201161c6b9a518307fc6) format("truetype"), url(/fonts/mdl2.svg?5a5eafcd6fa4ccab8f0023861c6a741f) format("svg");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .mdl2-rotate-90 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+                transform: rotate(90deg);
+            }
+
+            .mdl2-rotate-180 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+                transform: rotate(180deg);
+            }
+
+            .mdl2-rotate-270 {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+                transform: rotate(270deg);
+            }
+
+            .mdl2-flip-horizontal {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+                transform: scale(-1, 1);
+            }
+
+            .mdl2-flip-vertical {
+                -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+                transform: scale(1, -1);
+            }
+
+            :root .mdl2-rotate-90,
+            :root .mdl2-rotate-180,
+            :root .mdl2-rotate-270,
+            :root .mdl2-flip-horizontal,
+            :root .mdl2-flip-vertical {
+                filter: none;
+            }
+
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                border: 0;
+            }
+
+            .sr-only-focusable:active,
+            .sr-only-focusable:focus {
+                position: static;
+                width: auto;
+                height: auto;
+                margin: 0;
+                overflow: visible;
+                clip: auto;
+            }
+
+            .mdl2-stack {
+                position: relative;
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+                line-height: 2em;
+                vertical-align: middle;
+            }
+
+            .mdl2-stack-1x,
+            .mdl2-stack-2x {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .mdl2-stack-1x {
+                line-height: inherit;
+            }
+
+            .mdl2-stack-2x {
+                font-size: 2em;
+            }
+
+            .mdl2-inverse {
+                color: #fff;
+            }
+
+            /* This stylesheet generated by Transfonter (https://transfonter.org) on August 23, 2017 4:44 PM */
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI-Light.eot?e1fb2c57bdf0dc6fc9839650534ce150);
+                src: local("Segoe UI Light"), local("SegoeUI-Light"), url(/fonts/SegoeUI-Light.eot?e1fb2c57bdf0dc6fc9839650534ce150) format("embedded-opentype"), url(/fonts/SegoeUI-Light.woff?637425ddb5e656ddba279cf6751c445c) format("woff"), url(/fonts/SegoeUI-Light.ttf?e936b0cd9c6babe1765833d54913e1e1) format("truetype");
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI-BoldItalic.eot?0af1e09d09837b499ad0859920d09e3a);
+                src: local("Segoe UI Bold Italic"), local("SegoeUI-BoldItalic"), url(/fonts/SegoeUI-BoldItalic.eot?0af1e09d09837b499ad0859920d09e3a) format("embedded-opentype"), url(/fonts/SegoeUI-BoldItalic.woff?f130f88abce11992beff61f2af4f2c5d) format("woff"), url(/fonts/SegoeUI-BoldItalic.ttf?4a6837b6e298deccbbf8722960fa7ddd) format("truetype");
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI-SemiBold.eot?3a911b2e616c382136a2cff4cd44cad5);
+                src: local("Segoe UI Semibold"), local("SegoeUI-SemiBold"), url(/fonts/SegoeUI-SemiBold.eot?3a911b2e616c382136a2cff4cd44cad5) format("embedded-opentype"), url(/fonts/SegoeUI-SemiBold.woff?30fd9798b564a1e564e4ee9d05401bd3) format("woff"), url(/fonts/SegoeUI-SemiBold.ttf?7e7e91c1a04e9aab08785ed98882b756) format("truetype");
+                font-weight: 600;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI.eot?afeddaf4517ff44f38faf2b09a4cb00b);
+                src: local("Segoe UI"), local("SegoeUI"), url(/fonts/SegoeUI.eot?afeddaf4517ff44f38faf2b09a4cb00b) format("embedded-opentype"), url(/fonts/SegoeUI.woff?7d57fcab3b3b4890bacc9d0b38302bf0) format("woff"), url(/fonts/SegoeUI.ttf?b127acafb23e1c48733e379e1574bded) format("truetype");
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI-Bold.eot?d41fe674f34c7f1601193bb4b48dbef0);
+                src: local("Segoe UI Bold"), local("SegoeUI-Bold"), url(/fonts/SegoeUI-Bold.eot?d41fe674f34c7f1601193bb4b48dbef0) format("embedded-opentype"), url(/fonts/SegoeUI-Bold.woff?2621e35ae73a5ca8a0c1fd46fe9d97ae) format("woff"), url(/fonts/SegoeUI-Bold.ttf?58c5b6ad38732253fb3948d1253a0a39) format("truetype");
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Segoe UI";
+                src: url(/fonts/SegoeUI-Italic.eot?e764e7e9f676abeeed88112f5b8eda51);
+                src: local("Segoe UI Italic"), local("SegoeUI-Italic"), url(/fonts/SegoeUI-Italic.eot?e764e7e9f676abeeed88112f5b8eda51) format("embedded-opentype"), url(/fonts/SegoeUI-Italic.woff?b84c00b4db1f43121937898864143bdf) format("woff"), url(/fonts/SegoeUI-Italic.ttf?036b862739a04bd5844d1ea945c4fc13) format("truetype");
+                font-weight: normal;
+                font-style: italic;
+            }
+
             .header {
                 transition: 0.3s ease-in-out all;
             }
@@ -425,6 +2016,7 @@
                 height: 10px;
                 margin-left: 6px;
                 cursor: pointer;
+                margin-top: 3px;
             }
 
             .header__navigation-item-arrow::after,
@@ -451,7 +2043,9 @@
                 .header__navigation-item-arrow {
                     width: 15px;
                     height: 15px;
-                    margin-left: 9px;
+                    margin-left: 8px;
+                    margin-top: 0px;
+                    margin-bottom: 2px;
                 }
 
                 .header__navigation-item-arrow::after,
@@ -486,10 +2080,10 @@
                 position: absolute;
                 content: "";
                 background-color: #000;
-                height: 100%;
+                height: 23px;
                 width: 2px;
                 right: -28px;
-                top: 0;
+                top: 2px;
             }
 
             .header__left-home-link:focus::before,
@@ -512,9 +2106,9 @@
                 text-decoration: none;
                 color: #262626;
                 font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
-                font-size: 17px;
-                font-weight: bold;
-                margin: 3px 9px 0 18px;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 2px 11px 0 19px;
                 outline: none;
                 position: relative;
             }
@@ -565,8 +2159,15 @@
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                margin-top: 1px;
-                margin-right: 20px;
+                margin-right: 21px;
+            }
+
+            .header__left-navigation-item:nth-child(3) {
+                margin-left: 1px;
+            }
+
+            .header__left-navigation-item:nth-child(4) {
+                margin-right: 18px;
             }
 
             .header__left-navigation-item span {
@@ -640,7 +2241,7 @@
             .header__right-navigation {
                 display: flex;
                 list-style-type: none;
-                padding: 0 4px 0 0;
+                padding: 0 8px 0 0;
                 margin: 0;
                 justify-self: flex-end;
                 flex-shrink: 0;
@@ -671,11 +2272,11 @@
             }
 
             .header__right-navigation-item--is-search span {
-                margin-right: 8px;
+                margin-right: 6px;
             }
 
             .header__right-navigation-item--is-cart span {
-                margin-right: 5px;
+                margin-right: 6px;
             }
 
             @media (max-width: 1399px) {
@@ -685,7 +2286,7 @@
             }
 
             .header__right-navigation-item--is-login span {
-                margin-right: 8px;
+                margin-right: 12px;
             }
 
             @media (max-width: 1399px) {
@@ -694,12 +2295,20 @@
                 }
             }
 
+            .header__right-navigation-item:nth-child(1) span {
+                display: block;
+                margin-top: 0px;
+                margin-bottom: 0;
+            }
+
             .header__right-navigation-item:nth-child(2) span {
-                margin-left: 6px;
+                margin-left: 8px;
+                font-size: 13px;
+                margin-bottom: 4px;
             }
 
             .header__right-navigation-item:nth-child(3) span {
-                margin-left: 3px;
+                margin-left: 2px;
             }
 
             .header__right-navigation-item:nth-child(4) {
@@ -708,6 +2317,7 @@
 
             .header__right-navigation-item span {
                 display: none;
+                margin-bottom: 2px;
             }
 
             @media (min-width: 1399px) {
@@ -716,22 +2326,25 @@
                 }
             }
 
-            .header__right-navigation-item:nth-child(1) span {
-                display: block;
-            }
-
             @media (max-width: 1399px) {
                 .header__right-navigation-item {
-                    margin-right: 15px;
+                    margin-right: 19px;
                 }
 
                 .header__right-navigation-item:nth-child(1) {
-                    margin-right: 50px;
+                    margin-right: 41px;
                 }
             }
 
+            .header__right-navigation-item-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
             .header__right-navigation-item-logo--is-search {
-                width: 13px;
+                font-size: 16px;
+                margin-bottom: 3px;
             }
 
             .header__right-navigation-item-logo--is-cart {
@@ -739,8 +2352,27 @@
                 margin-bottom: 3px;
             }
 
+            @media (max-width: 1399px) {
+                .header__right-navigation-item-logo--is-cart {
+                    margin-bottom: 4px;
+                }
+            }
+
             .header__right-navigation-item-logo--is-login {
-                width: 40px;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                position: relative;
+                border: 1px solid #5d5d5d;
+            }
+
+            .header__right-navigation-item-logo--is-login::before {
+                font-family: MDL2;
+                font-size: 18px;
+                order: 2;
+                left: 8px;
+                color: #5d5d5d;
+                position: absolute;
             }
 
             .mobile-header {
@@ -760,13 +2392,14 @@
                 justify-content: space-between;
                 align-items: center;
                 box-sizing: border-box;
-                height: 53px;
+                height: 55px;
                 border-bottom: 1px solid #e0e0e0;
             }
 
             .mobile-header__navigation {
                 display: flex;
                 align-items: center;
+                margin-right: 2px;
             }
 
             .mobile-header__navigation-item {
@@ -776,11 +2409,15 @@
             }
 
             .mobile-header__navigation-item--is-search {
-                margin: 0 0 3px 36px;
+                margin: 3px 0 0 32px;
             }
 
             .mobile-header__navigation-item--is-search img {
                 width: 13px;
+            }
+
+            .mobile-header__navigation-item--is-cart {
+                margin-top: 4px;
             }
 
             .mobile-header__navigation-item--is-cart img {
@@ -788,7 +2425,8 @@
             }
 
             .mobile-header__navigation-item--is-login {
-                margin-left: 23px;
+                margin-left: 30px;
+                margin-top: 2px;
             }
 
             .mobile-header__navigation-item--is-login img {
@@ -839,11 +2477,12 @@
                 background-color: transparent;
                 cursor: pointer;
                 padding: 0;
-                margin: 0;
                 color: #262626;
-                font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-family: "Segoe UI";
                 font-size: 15px;
-                font-weight: 500;
+                font-weight: 600;
+                margin-top: 2px;
+                letter-spacing: 0.11px;
             }
 
             .header--is-hidden {
@@ -890,9 +2529,10 @@
                         </li>
                         <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-search"
                             tabindex="0">
-                            <span class="header__underline">Search</span><img src="/img/searching.svg"
-                                class="header__right-navigation-item-logo header__right-navigation-item-logo--is-search"
-                                alt="search" />
+                            <span class="header__underline">Search</span>
+                            <div
+                                class="mdl2 mdl2-find-legacy header__right-navigation-item-logo header__right-navigation-item-logo--is-search">
+                            </div>
                         </li>
                         <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-cart"
                             tabindex="0">
@@ -901,10 +2541,12 @@
                                 alt="cart" />
                         </li>
                         <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-login"
-                            tabindex="0"><span class="">Sign
-                                in</span><img src="/img/icons8-male-user-64.png"
-                                class="header__right-navigation-item-logo header__right-navigation-item-logo--is-login"
-                                alt="login" /></li>
+                            tabindex="0"><span>Sign
+                                in</span>
+                            <div
+                                class="mdl2 mdl2-add-friend header__right-navigation-item-logo header__right-navigation-item-logo--is-login">
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -918,8 +2560,11 @@
                         <span class="mobile-header__navigation-burger-item"></span>
                     </div>
                     <button class="mobile-header__navigation-item mobile-header__navigation-item--is-search"
-                        tabindex="0"><img class="mobile-header__navigation-item-image" alt="search"
-                            src="/img/searching.svg" /></button>
+                        tabindex="0">
+                        <div
+                            class="mdl2 mdl2-find-legacy header__right-navigation-item-logo header__right-navigation-item-logo--is-search">
+                        </div>
+                    </button>
                 </div>
                 <img src="/img/microsoft logo.png" alt="logo" class="mobile-header__logo" tabindex="0" />
                 <div class="mobile-header__navigation">
@@ -927,8 +2572,11 @@
                         tabindex="0"><img class="mobile-header__navigation-item-image" src="/img/shopping-cart.svg"
                             alt="cart"></button>
                     <button class="mobile-header__navigation-item mobile-header__navigation-item--is-login"
-                        tabindex="0"><img class="mobile-header__navigation-item-image"
-                            src="/img/icons8-male-user-64.png" alt="login"></button>
+                        tabindex="0">
+                        <div
+                            class="mdl2 mdl2-add-friend header__right-navigation-item-logo header__right-navigation-item-logo--is-login">
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="mobile-header__product-navigation">

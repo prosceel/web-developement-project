@@ -71,6 +71,7 @@
     height: 10px;
     margin-left: 6px;
     cursor: pointer;
+    margin-top: 3px;
 
     &::after,
     &::before {
@@ -95,7 +96,9 @@
     @media (max-width: 859px) {
       width: 15px;
       height: 15px;
-      margin-left: 9px;
+      margin-left: 8px;
+      margin-top: 0px;
+      margin-bottom: 2px;
 
       &::after,
       &::before {
@@ -129,10 +132,10 @@
       position: absolute;
       content: "";
       background-color: #000;
-      height: 100%;
+      height: 23px;
       width: 2px;
       right: -28px;
-      top: 0;
+      top: 2px;
     }
 
     &:focus,
@@ -159,9 +162,9 @@
     color: #262626;
     font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
       sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 3px 9px 0 18px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 2px 11px 0 19px;
     outline: none;
     position: relative;
 
@@ -214,8 +217,15 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    margin-top: 1px;
-    margin-right: 20px;
+    margin-right: 21px;
+
+    &:nth-child(3) {
+      margin-left: 1px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 18px;
+    }
 
     span {
       font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
@@ -297,7 +307,7 @@
   &__right-navigation {
     display: flex;
     list-style-type: none;
-    padding: 0 4px 0 0;
+    padding: 0 8px 0 0;
     margin: 0;
     justify-self: flex-end;
     flex-shrink: 0;
@@ -330,13 +340,13 @@
 
     &--is-search {
       span {
-        margin-right: 8px;
+        margin-right: 6px;
       }
     }
 
     &--is-cart {
       span {
-        margin-right: 5px;
+        margin-right: 6px;
       }
       @media (max-width: 1399px) {
         span {
@@ -347,7 +357,7 @@
 
     &--is-login {
       span {
-        margin-right: 8px;
+        margin-right: 12px;
       }
       @media (max-width: 1399px) {
         span {
@@ -356,15 +366,25 @@
       }
     }
 
+    &:nth-child(1) {
+      span {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
+    }
+
     &:nth-child(2) {
       span {
-        margin-left: 6px;
+        margin-left: 8px;
+        font-size: 13px;
+        margin-bottom: 4px;
       }
     }
 
     &:nth-child(3) {
       span {
-        margin-left: 3px;
+        margin-left: 2px;
       }
     }
 
@@ -374,38 +394,55 @@
 
     span {
       display: none;
+      margin-bottom: 2px;
 
       @media (min-width: 1399px) {
         display: block;
       }
     }
 
-    &:nth-child(1) {
-      span {
-        display: block;
-      }
-    }
-
     @media (max-width: 1399px) {
-      margin-right: 15px;
+      margin-right: 19px;
       &:nth-child(1) {
-        margin-right: 50px;
+        margin-right: 41px;
       }
     }
   }
 
   &__right-navigation-item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &--is-search {
-      width: 13px;
+      font-size: 16px;
+      margin-bottom: 3px;
     }
 
     &--is-cart {
       width: 16px;
       margin-bottom: 3px;
+
+      @media (max-width: 1399px) {
+        margin-bottom: 4px;
+      }
     }
 
     &--is-login {
-      width: 40px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      position: relative;
+      border: 1px solid #5d5d5d;
+
+      &::before {
+        font-family: MDL2;
+        font-size: 18px;
+        order: 2;
+        left: 8px;
+        color: #5d5d5d;
+        position: absolute;
+      }
     }
   }
 }

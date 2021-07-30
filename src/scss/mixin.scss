@@ -1,8 +1,0 @@
-@mixin text-width {
-  width: 100%;
-  max-width: 620px;
-
-  @media (max-width: 650px) {
-    max-width: calc(100vw - 30px);
-  }
-}

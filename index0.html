@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Test task</title>
+        <!--styles goes here-->
+        <link rel="stylesheet" href="dist/index.css" />
+        <!--add styles after this line-->
+    </head>
+
+    <body>
+        <header class="header header--is-hidden">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <a href="/" class="header__left-home-link" tabindex="0"><img src="/img/microsoft logo.png"
+                            alt="logo" class="header__left-home-link-logo" /></a>
+                    <a href="/" class="header__left-product-link" tabindex="0"><span
+                            class="header__underline">Surface</span></a>
+                    <!-- I've tweaked paddings and margins a bit here to leave them standartized (on MS site they're custom for each menu element) -->
+                    <ul class="header__left-navigation">
+                        <li class="header__left-navigation-item"> <span class="" tabindex="0">Computers</span>
+                            <div class="header__navigation-item-arrow"></div>
+                        </li>
+                        <li class="header__left-navigation-item"><span class="" tabindex="0">Computers
+                                for
+                                Business</span>
+                            <div class="header__navigation-item-arrow"></div>
+                        </li>
+                        <li class="header__left-navigation-item"><span class="" tabindex="0">Accessories</span>
+                            <div class="header__navigation-item-arrow"></div>
+                        </li>
+                        <li class="header__left-navigation-item"><span class="" tabindex="0">Shop
+                                now</span>
+                            <div class="header__navigation-item-arrow"></div>
+                        </li>
+                        <li class="header__left-navigation-item"><a tabindex="0" href="/"
+                                class="header__left-navigation-item-support"><span class="">Support</span></a></li>
+                    </ul>
+                </div>
+                <div class="header__right">
+                    <ul class="header__right-navigation">
+                        <li class="header__right-navigation-item header__left-navigation-item">
+                            <span class="header__underline" tabindex="0">All
+                                Microsoft</span>
+                            <div class="header__navigation-item-arrow"></div>
+                        </li>
+                        <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-search"
+                            tabindex="0">
+                            <span class="header__underline">Search</span>
+                            <div
+                                class="mdl2 mdl2-find-legacy header__right-navigation-item-logo header__right-navigation-item-logo--is-search">
+                            </div>
+                        </li>
+                        <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-cart"
+                            tabindex="0">
+                            <span class="header__underline">Cart</span><img src="/img/shopping-cart.svg"
+                                class="header__right-navigation-item-logo header__right-navigation-item-logo--is-cart"
+                                alt="cart" />
+                        </li>
+                        <li class="header__right-navigation-item header__left-navigation-item header__right-navigation-item--is-login"
+                            tabindex="0"><span>Sign
+                                in</span>
+                            <div
+                                class="mdl2 mdl2-add-friend header__right-navigation-item-logo header__right-navigation-item-logo--is-login">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <header class="mobile-header header--is-hidden">
+            <div class="mobile-header__wrapper">
+                <div class="mobile-header__navigation">
+                    <div class="mobile-header__navigation-burger" tabindex="0">
+                        <span class="mobile-header__navigation-burger-item"></span>
+                        <span class="mobile-header__navigation-burger-item"></span>
+                        <span class="mobile-header__navigation-burger-item"></span>
+                    </div>
+                    <button class="mobile-header__navigation-item mobile-header__navigation-item--is-search"
+                        tabindex="0">
+                        <div
+                            class="mdl2 mdl2-find-legacy header__right-navigation-item-logo header__right-navigation-item-logo--is-search">
+                        </div>
+                    </button>
+                </div>
+                <img src="/img/microsoft logo.png" alt="logo" class="mobile-header__logo" tabindex="0" />
+                <div class="mobile-header__navigation">
+                    <button class="mobile-header__navigation-item mobile-header__navigation-item--is-cart"
+                        tabindex="0"><img class="mobile-header__navigation-item-image" src="/img/shopping-cart.svg"
+                            alt="cart"></button>
+                    <button class="mobile-header__navigation-item mobile-header__navigation-item--is-login"
+                        tabindex="0">
+                        <div
+                            class="mdl2 mdl2-add-friend header__right-navigation-item-logo header__right-navigation-item-logo--is-login">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-header__product-navigation">
+                <button class="mobile-header__product-navigation-button">
+                    Surface
+                    <div class="header__navigation-item-arrow"></div>
+                </button>
+            </div>
+        </header>
+        <main></main>
+    </body>
+    <script type="text/javascript">
+        const header = document.querySelector('.header');
+        const mobileHeader = document.querySelector('.mobile-header');
+
+        const showHeader = () => {
+            header.classList.remove('header--is-hidden');
+            mobileHeader.classList.remove('header--is-hidden')
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(showHeader, 1500)
+        });
+    </script>
+
+</html>
